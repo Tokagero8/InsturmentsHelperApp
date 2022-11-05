@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.lessons.LessonsNameSummaryFragment">
+
+    <TextView
+        android:id="@+id/text_view_name_final_score_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/summary_score"
+        android:textSize="36dp" />
+
+    <TextView
+        android:id="@+id/text_view_name_final_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_name_final_score_text"
+        android:layout_marginLeft="-70dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/text_view_name_final_score_text"
+        android:text="50"
+        android:textSize="42dp" />
+
+    <TextView
+        android:id="@+id/text_view_name_needed_score_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/text_view_name_final_score_text"
+        android:text="@string/required"
+        android:textSize="36dp" />
+
+    <TextView
+        android:id="@+id/text_view_name_needes_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_name_needed_score_text"
+        android:layout_marginLeft="-94dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/text_view_name_needed_score_text"
+        android:text="50"
+        android:textSize="42dp" />
+
+    <TextView
+        android:id="@+id/text_view_name_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_name_needes_score"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/lesson_passed"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/text_view_next_lesson_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_name_result"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:text="Lekcja X jest przewidziana na XX:XX:XX o godzinie XX:XX. Czy dodać lekcję do kalendarza?"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/button_name_add_lesson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_next_lesson_date"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/yes" />
+
+    <Button
+        android:id="@+id/button_name_dont_add_lesson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_next_lesson_date"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/button_name_add_lesson"
+        android:text="@string/no" />
+
+    <Button
+        android:id="@+id/button_name_add_lesson_manual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_next_lesson_date"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/button_name_dont_add_lesson"
+        android:text="@string/add_manually" />
+
+    <Button
+        android:id="@+id/button_end_name_lesson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/end_the_lesson"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/text_view_next_lesson_date"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="45dp"/>
+
+</RelativeLayout>

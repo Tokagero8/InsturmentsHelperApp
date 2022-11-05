@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.lessons.LessonsPlayFragment">
+    
+    <TextView
+        android:id="@+id/text_view_play_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="0"
+        android:textSize="60dp"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/text_view_play_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1:00"
+        android:textSize="40dp"
+        android:layout_toEndOf="@+id/text_view_play_score"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="80dp"/>
+
+    <ImageView
+        android:id="@+id/image_view_chord_to_play"
+        android:layout_width="wrap_content"
+        android:layout_height="340dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/text_view_play_score"
+        android:layout_marginTop="60dp" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout_play_lesson"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_view_chord_to_play"
+        android:layout_marginTop="2dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⬤"
+            android:textSize="30dp"
+            android:layout_marginHorizontal="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⬤"
+            android:textSize="30dp"
+            android:layout_marginHorizontal="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⬤"
+            android:textSize="30dp"
+            android:layout_marginHorizontal="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⬤"
+            android:textSize="30dp"
+            android:layout_marginHorizontal="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⬤"
+            android:textSize="30dp"
+            android:layout_marginHorizontal="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⬤"
+            android:textSize="30dp"
+            android:layout_marginHorizontal="15dp"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

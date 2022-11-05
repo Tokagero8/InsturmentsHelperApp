@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.lessons.LessonsChordInfoFragment"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_view_lessons_chord_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:text="Podczas lekcji będziesz musiał poprawnie wyznaczyć akord. Za każdy poprawnie wyznaczony akord otrzymasz 1 punkt. Czas lekcji jest przewidziany na X minut i X sekund. Aby zaliczyć lekcję musisz w tym czasie wyznaczyć poprawnie X akordów. Poniżej znajdziesz listę akordów zawartych w tej lekcji. Kliknij przycisk konstynułuj aby przejść dalej."
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <GridView
+        android:id="@+id/grid_view_chords_info"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_weight="2"
+        android:layout_below="@+id/text_view_lessons_play_info"
+        android:numColumns="2"
+        android:verticalSpacing="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/button_lesson_info_continute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/grid_view_chords_info"
+        android:layout_centerInParent="true"
+        android:text="@string/info_continue"
+        android:textSize="20dp"/>
+
+
+</LinearLayout>

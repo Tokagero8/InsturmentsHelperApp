@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">InsturmentsHelperApp</string>
+
+    <!-- Main -->
+    <string name="welcome_text">Hello Musician!</string>
+
+    <!-- Side Menu -->
+    <string name="tuner">Tuner</string>
+    <string name="select_instrument">Select Instrument</string>
+    <string name="select_tuning">Select Tuning</string>
+    <string name="activities">Activities</string>
+    <string name="lessons">Lessons</string>
+    <string name="chords_book">Chords Book</string>
+    <string name="settings">Settings</string>
+
+    <!-- Tuner -->
+    <string name="frequence">Frequence:</string>
+    <string name="cents">Cents:</string>
+
+    <!-- Lesson Settings -->
+    <string name="confirm_reset">Confirm reset</string>
+    <string name="selected_instrument">Selected instrument: </string>
+    <string name="lessons_intensity">Lessons intensity: </string>
+    <string name="preferred_lesson_time">Preferred lesson time: </string>
+    <string name="preferred_repeatability">Preferred repeatability: </string>
+    <string name="adjusting_the_intensity">Adjusting the intensity: </string>
+    <string name="reset">Reset:</string>
+    <string name="progress">Progress</string>
+    <string name="score">Score</string>
+    <string name="intensity">Intensity</string>
+    <string name="none_minutes">No time limit</string>
+    <string name="one_minute">1 minute</string>
+    <string name="three_minutes">3 minutes</string>
+    <string name="five_minutes">5 minutes</string>
+    <string name="ten_minutes">10 minutes</string>
+    <string name="fifteen_minutes">15 minutes</string>
+    <string name="none">None.</string>
+    <string name="every_day">Every day.</string>
+    <string name="every">Every</string>
+    <string name="days">days.</string>
+
+    <!-- Chord Book -->
+    <string name="chords">chords</string>
+
+    <!-- Lessons summary-->
+    <string name="summary_score">Score</string>
+    <string name="required">Required</string>
+    <string name="lesson_passed">Lesson passed!</string>
+    <string name="lesson_failed">Lesson failed.</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="add_manually">Add manually</string>
+    <string name="end_the_lesson">End the lesson</string>
+    <string name="complete_all_lesson">"You have completed all of the lessons for this instrument!"</string>
+    <string name="is_scheduled_for">is scheduled for</string>
+    <string name="at">at</string>
+    <string name="add_a_lesson_to_the_calendar">. Add a lesson to the calendar?</string>
+
+    <!-- Lessons info-->
+    <string name="info_continue">Continue</string>
+    <string name="play_info_1">During the lesson, you will have to play the presented chord correctly. For each correctly played chord you will receive 1 point. </string>
+    <string name="chord_info_1">You will need to mark the chord correctly during the lesson. For each correctly marked chord you will receive 1 point. </string>
+    <string name="name_info_1">You will need to correctly identify the chord name during the lesson. For each correctly designated name you will receive 1 point. </string>
+    <string name="info_2a">The time of the lesson is scheduled for</string>
+    <string name="minutes">minutes</string>
+    <string name="seconds">seconds.</string>
+    <string name="info_2b">The time of the lessons is not limited in time. </string>
+    <string name="play_info_3a">To pass the lesson, you must play correctly </string>
+    <string name="play_info_3b"> chords. </string>
+    <string name="chord_info_3a">In order to pass the lesson, you must correctly determine </string>
+    <string name="chord_info_3b">chords. </string>
+    <string name="name_info_3a">In order to pass the lesson, you must correctly define</string>
+    <string name="name_info_3b">names.</string>
+    <string name="info_3">The lesson does not have the required number of points to earn. </string>
+    <string name="info_4">Below you will find a list of the chords included in this lesson. Click the continue button to proceed.</string>
+
+    <!-- Lessons menu -->
+    <string name="play">Play</string>
+    <string name="select_chord">Select Chord</string>
+    <string name="select_name">Select Name</string>
+
+
+
+    <string name="nav_open_drawer" translatable="false">Open Drawer</string>
+    <string name="nav_close_drawer" translatable="false">Close Drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+</resources>

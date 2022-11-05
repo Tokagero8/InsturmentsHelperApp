@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.lessons.LessonsSettingsFragment">
+    <TextView
+        android:id="@+id/text_view_selected_lesson_instrument"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/selected_instrument"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/image_view_instrument_icon"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_toRightOf="@+id/text_view_selected_lesson_instrument"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/text_view_instrument_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/text_view_selected_lesson_instrument"
+        android:layout_toRightOf="@+id/image_view_instrument_icon"
+        android:text="Guitar"
+        android:textSize="19dp" />
+
+    <TextView
+        android:id="@+id/text_view_lessons_length"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_view_instrument_icon"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/lessons_intensity"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/text_view_lessons_length_minutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/text_view_lessons_length"
+        android:layout_toRightOf="@+id/text_view_lessons_length"
+        android:text="15 minutes"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/text_view_lessons_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_lessons_length"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/preferred_lesson_time"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/text_view_lessons_time_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/text_view_lessons_time"
+        android:layout_toRightOf="@+id/text_view_lessons_time"
+        android:text="17:00"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/text_view_lessons_repeatability"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_lessons_time"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/preferred_repeatability"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/text_view_lessons_repeatability_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/text_view_lessons_repeatability"
+        android:layout_toRightOf="@+id/text_view_lessons_repeatability"
+        android:text="Every 2 days."
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/text_view_use_of_intensity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_lessons_repeatability"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="8dp"
+        android:textSize="20dp"
+        android:text="@string/adjusting_the_intensity"/>
+
+    <Switch
+        android:id="@+id/switch_use_of_intensity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/text_view_use_of_intensity"
+        android:layout_toRightOf="@+id/text_view_use_of_intensity"/>
+
+    <TextView
+        android:id="@+id/text_view_lessons_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_use_of_intensity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/reset"
+        android:textSize="22dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_lessons_reset"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/button_reset_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="4dp"
+            android:layout_weight="2"
+            android:background="@color/settingResets"
+            android:text="@string/progress"
+            android:textSize="14dp" />
+
+        <Button
+            android:id="@+id/button_reset_best_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="4dp"
+            android:layout_weight="3"
+            android:background="@color/settingResets"
+            android:text="@string/score"
+            android:textSize="14dp" />
+
+        <Button
+            android:id="@+id/button_reset_intensity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="4dp"
+            android:layout_weight="2"
+            android:background="@color/settingResets"
+            android:text="@string/intensity"
+            android:textSize="14dp" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

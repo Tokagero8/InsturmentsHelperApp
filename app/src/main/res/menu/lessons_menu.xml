@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/lessons_menu"
+            android:checked="true"
+            android:icon="@drawable/ic_baseline_games_24"
+            android:title="@string/lessons" />
+        <item
+            android:id="@+id/settings_menu"
+            android:icon="@drawable/ic_baseline_settings_24"
+            android:title="@string/settings" />
+    </group>
+    <item android:title="@string/activities">
+        <menu>
+            <item
+                android:id="@+id/chords_book_menu"
+                android:icon="@drawable/ic_baseline_library_books_24"
+                android:title="@string/chords_book" />
+            <item
+                android:id="@+id/tuner_menu"
+                android:icon="@drawable/ic_baseline_mic_24"
+                android:title="@string/tuner" />
+        </menu>
+    </item>
+
+</menu>

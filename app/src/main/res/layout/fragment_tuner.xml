@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".view.tuner.TunerFragment">
+
+    <TextView
+        android:id="@+id/text_view_selected_instrument_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Instrument"
+        android:textSize="48sp" />
+
+    <TextView
+        android:id="@+id/text_view_selected_tuning_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:text="Tuning"
+        android:textSize="36sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:id="@+id/radio_group_strings_select_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/linear_layout_tuning_info"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:scaleX="0.8"
+            android:scaleY="0.8">
+
+            <RadioButton
+                android:id="@+id/radio_button_string_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layoutDirection="rtl"
+                android:text="G"
+                android:textSize="36sp" />
+
+
+            <RadioButton
+                android:id="@+id/radio_button_string_left_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layoutDirection="rtl"
+                android:text="G"
+                android:textSize="36sp" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radio_group_strings_select_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/linear_layout_tuning_info"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:scaleX="0.8"
+            android:scaleY="0.8">
+
+            <RadioButton
+                android:id="@+id/radio_button_string_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="G"
+                android:textSize="36sp" />
+
+            <RadioButton
+                android:id="@+id/radio_button_string_right_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="G"
+                android:textSize="36sp" />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tuning_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_view_frequency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/frequence"
+                android:textSize="26sp" />
+
+            <TextView
+                android:id="@+id/text_view_frequency_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="440HZ"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/text_view_cents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/cents"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/text_view_cents_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="32sp" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
